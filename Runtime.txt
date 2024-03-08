@@ -1,0 +1,25 @@
+Tiny Array
+insert 23.333 μs
+append 64.833 μs
+
+Small Array
+insert 30.542 μs
+append 60.667 μs
+
+medium Array
+insert 175.333 μs
+append 123 μs
+
+large Array
+insert 8.348667 ms
+append 597.167 μs
+
+extra large Array
+insert 778.746417 ms
+append 1.474042 ms
+
+
+
+The insert takes longer. This happens because insert uses unshift.
+This makes the array have to shift every item within it to get the actual outcome.
+The function scales exponentially. 
